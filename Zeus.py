@@ -58,7 +58,7 @@ def login():
 
 {Fore.RESET}''')
 
-    ans = input(f'> ')
+    ans = input('> ')
 
     if ans == "1":
         user = input(f'{Fore.BLUE}Provide key: {Fore.RESET}')
@@ -81,7 +81,7 @@ def login():
         print("\n Not Valid Option")
         time.sleep(1)
         quit()
-    elif ans != "":
+    else:
         print("\n Not Valid Option")
         time.sleep(1)
         quit()
@@ -129,13 +129,13 @@ def printt ():#line:285
     Check Error code: {crs}
     ''')#line:319
         clear ()#line:321
-def claim ():#line:324
+def claim():#line:324
     global rps ,a ,rl ,er ,N_prrs ,msg ,stat ,rqs ,eru ,cr ,crs, tmsg #line:325
     rl =0 #line:326
     OO0OOOOOO0OOO0O0O ='https://api22-normal-c-useast1a.tiktokv.com/passport/login_name/update/?iid=7037547498412918534&device_id=6568572585649489418&ac=wifi&channel=googleplay&aid=1233&app_name=musical_ly&version_code=220105&version_name=22.1.5&device_platform=android&ab_version=22.1.5&ssmix=a&device_type=G011A&device_brand=google&language=en&os_api=25&os_version=7.1.2&openudid=72b9ece3ef7e8c14&manifest_version_code=2022201050&resolution=1024*576&dpi=191&update_version_code=2022201050&_rticket=1638653359068&current_region=US&app_type=normal&sys_region=US&mcc_mnc=311271&timezone_name=Asia%2FShanghai&residence=US&ts=1638653344&timezone_offset=28800&build_number=22.1.5&region=US&uoo=0&app_language=en&carrier_region=US&locale=en&op_region=US&ac2=wifi&cdid=0456edd8-8b5c-47ac-a8df-4ac429b8455e&support_webview=1&okhttp_version=4.0.69.4-tiktok'#line:327
     OOOOO00O0000O0OO0 =random .choice (useragents )#line:328
     O00000OOO00O00000 =1 #line:330
-    while True :#line:332
+    while True:#line:332
         OOOOO00O0000O0OO0 =random .choice (useragents )#line:334
         O0O00OOO00O0O000O ={'user-agent':f'{OOOOO00O0000O0OO0}'}#line:337
         if p_file =='':#line:356
@@ -160,40 +160,39 @@ def claim ():#line:324
         session .proxies =OOO00O0OOO000OO0O #line:418
         O0O000O0O000O00OO =session .head (O0O00000OO00OOO0O )#line:419
         rps +=1 #line:422
-        stat = str(O0O000O0O000O00OO .status_code)
-        if O0O000O0O000O00OO .status_code ==404 :#line:424
+        if O0O000O0O000O00OO .status_code ==404:#line:424
             ua = random.choice(useragents)
 
             prox = {'http': 'http://' + (random.choice(proxies_list))}
             OOO00O0OOO000OO0O  = {'http': 'http://' + (random.choice(proxies_list))}
 
             head = {
-                        'accept-encoding': 'gzip',
-                        'connection': 'Keep-Alive',
-                        'cookie': f'sessiondid={ssid}',
-                        'host': 'api16-normal-useast5.us.tiktokv.com',
-                        'multi_login': '1',
-                        'passport-sdk-version': '19',
-                        'sdk-version': '2',
-                        'user-agent': f'com.zhiliaoapp.musically/2022206050 (Linux; U; Android 7.1.2; en_US; ASUS_Z01QD; Build/N2G48H;tt-ok/3.10.0.2)',
-                        'x-argus': 'h6kDnUI1sZOQwbw91C/n3+XQ+Gn/nofV4yHoq/5bLRmKNoqaNLrVc7sC5BqNS62iBiG773ehSVdQjIVxloivM7g/hkDAsSOjFHut0sjPU7L424TU/4i6HMx8gUgTJOboFoM095IfibOpRtq1NrsqXqE/YtUu3uWZOpK0kN+ZxKK3Olo3bjEyT06v87atGxiO9pVSLlgI6yqWCbtZVVS5YcQwNrLH1zaJi9M28n1Gdjnd1TQ3XIp6/uSZCgQFyFtiDAH3kVXZp8//3MbRMS+mRVcYLqKLpLycSey5wTim9ipk5D+wJLH9suKQt2dvyGrI7tvWj0RYCt0zKLqSOqvCMZMJYGCsgfH9Vfa5csZ4Zn4ZNA==',
-                        'x-bd-client-key': '#Nej/tiV3LojO1q/oXhQwmcBqlv7n+WjSycENg+hkHAGSqNhZiaAbPqnQ7HKcIkgh+Ih4xmFy2vk5O806',
-                        'x-bd-kmsv': '0',
-                        'x-gorgon': '0404c00e4000c90d8b2df6b9ce4580d85dfea4a769f9c255ccd9',
-                        'x-khronos': '1639625767',
-                        'x-ladon': '28hoBAIHo1rnoGezCXlb/H49kMidE0Y+7JkSVCI0aLspuORu',
-                        'x-ss-req-ticket': '1639625767612',
-                        'x-tt-cmpl-token': 'AgQQAPNSF-RPsLGIBs7BeN08-rgIgpcLP4DZYMNimg',
-                        'x-tt-dm-status': 'login=1;ct=1;rt=1',
-                        'x-tt-multi-sids': '7040880128511214598%3A6938992258e53ac8519852ade7acdf62%7C7041057843780961285%3A041adfba270a1fbdf8df386df29e10bb%7C7041070606339146757%3A5e76dde9ef6f631b37bfd3bc2a7317ee%7C7041315433677440005%3A006ccc6e0212568e4d6b23cf61316634%7C7041563815842677806%3Acc8971478b09493c97731ac9f81b6a20%7C7041798389138654213%3A362fc4021bfd2f8899faa2d3f6647c25%7C7041798468658332677%3A807ae40499f0c267986da4942d0c23fe',
-                        'x-tt-passport-csrf-token': 'ee26664b7afcff0e8ed2e506200abeae',
-                        'x-tt-store-idc': 'maliva',
-                        'x-tt-store-region': 'us',
-                       'x-tt-store-region-src': 'uid',
-                        'x-tt-token': '0461f1dfe2d0e6ef55b94c607d4734f77d056e25c71aca9dba3f038ca05d5775954427d76b59cbecd144fea2542311a3e429bcfc44205cbb8695d70d169d4097726e0ef44c1e6665a953007f007ba12700e75f5fd6c683a5dae685a9076850d4458b6-1.0.1',
-                        'x-vc-bdturing-sdk-version': '2.2.1.i18n',
+                'accept-encoding': 'gzip',
+                'connection': 'Keep-Alive',
+                'cookie': f'sessiondid={ssid}',
+                'host': 'api16-normal-useast5.us.tiktokv.com',
+                'multi_login': '1',
+                'passport-sdk-version': '19',
+                'sdk-version': '2',
+                'user-agent': 'com.zhiliaoapp.musically/2022206050 (Linux; U; Android 7.1.2; en_US; ASUS_Z01QD; Build/N2G48H;tt-ok/3.10.0.2)',
+                'x-argus': 'h6kDnUI1sZOQwbw91C/n3+XQ+Gn/nofV4yHoq/5bLRmKNoqaNLrVc7sC5BqNS62iBiG773ehSVdQjIVxloivM7g/hkDAsSOjFHut0sjPU7L424TU/4i6HMx8gUgTJOboFoM095IfibOpRtq1NrsqXqE/YtUu3uWZOpK0kN+ZxKK3Olo3bjEyT06v87atGxiO9pVSLlgI6yqWCbtZVVS5YcQwNrLH1zaJi9M28n1Gdjnd1TQ3XIp6/uSZCgQFyFtiDAH3kVXZp8//3MbRMS+mRVcYLqKLpLycSey5wTim9ipk5D+wJLH9suKQt2dvyGrI7tvWj0RYCt0zKLqSOqvCMZMJYGCsgfH9Vfa5csZ4Zn4ZNA==',
+                'x-bd-client-key': '#Nej/tiV3LojO1q/oXhQwmcBqlv7n+WjSycENg+hkHAGSqNhZiaAbPqnQ7HKcIkgh+Ih4xmFy2vk5O806',
+                'x-bd-kmsv': '0',
+                'x-gorgon': '0404c00e4000c90d8b2df6b9ce4580d85dfea4a769f9c255ccd9',
+                'x-khronos': '1639625767',
+                'x-ladon': '28hoBAIHo1rnoGezCXlb/H49kMidE0Y+7JkSVCI0aLspuORu',
+                'x-ss-req-ticket': '1639625767612',
+                'x-tt-cmpl-token': 'AgQQAPNSF-RPsLGIBs7BeN08-rgIgpcLP4DZYMNimg',
+                'x-tt-dm-status': 'login=1;ct=1;rt=1',
+                'x-tt-multi-sids': '7040880128511214598%3A6938992258e53ac8519852ade7acdf62%7C7041057843780961285%3A041adfba270a1fbdf8df386df29e10bb%7C7041070606339146757%3A5e76dde9ef6f631b37bfd3bc2a7317ee%7C7041315433677440005%3A006ccc6e0212568e4d6b23cf61316634%7C7041563815842677806%3Acc8971478b09493c97731ac9f81b6a20%7C7041798389138654213%3A362fc4021bfd2f8899faa2d3f6647c25%7C7041798468658332677%3A807ae40499f0c267986da4942d0c23fe',
+                'x-tt-passport-csrf-token': 'ee26664b7afcff0e8ed2e506200abeae',
+                'x-tt-store-idc': 'maliva',
+                'x-tt-store-region': 'us',
+                'x-tt-store-region-src': 'uid',
+                'x-tt-token': '0461f1dfe2d0e6ef55b94c607d4734f77d056e25c71aca9dba3f038ca05d5775954427d76b59cbecd144fea2542311a3e429bcfc44205cbb8695d70d169d4097726e0ef44c1e6665a953007f007ba12700e75f5fd6c683a5dae685a9076850d4458b6-1.0.1',
+                'x-vc-bdturing-sdk-version': '2.2.1.i18n',
+            }
 
-       }
             url = f'https://api16-normal-useast5.us.tiktokv.com/aweme/v1/unique/id/check/?unique_id={O00OO00OO0O000O00}&iid=7048144566931343109&device_id=7048144232045397509&ac=wifi&channel=googleplay&aid=1233&app_name=musical_ly&version_code=220605&version_name=22.6.5&device_platform=android&ab_version=22.6.5&ssmix=a&device_type=ASUS_Z01QD&device_brand=Asus&language=en&os_api=25&os_version=7.1.2&openudid=44f04b3c3c539875&manifest_version_code=2022206050&resolution=720*1280&dpi=240&update_version_code=2022206050&_rticket=1641164515350&current_region=ES&app_type=normal&sys_region=US&mcc_mnc=21404&timezone_name=Asia%2FShanghai&residence=ES&ts=1641164514&timezone_offset=28800&build_number=22.6.5&region=US&uoo=0&app_language=en&carrier_region=ES&locale=en&op_region=ES&ac2=wifi&host_abi=x86&cdid=758ea2b0-164b-4bbc-b3f7-dd891ea7a28b'
 
             rt =requests.get(url ,headers =head ,proxies =OOO00O0OOO000OO0O).text
@@ -233,15 +232,14 @@ def claim ():#line:324
                     eru ={O00OO00OO0O000O00 }#line:490
             else:
                 usernames.put(O00OO00OO0O000O00 )
-        elif O0O000O0O000O00OO .status_code ==200 :#line:492
-                usernames .put (O00OO00OO0O000O00 )#line:493
-        elif O0O000O0O000O00OO .status_code ==400 :#line:494
-                rl +=1 #line:495
-        elif O0O000O0O000O00OO .status_code ==403 :#line:496
-                rl +=1 #line:497
-        else :#line:498
-                cr +=1 #line:499
-                crs =stat #line:500
+        elif O0O000O0O000O00OO.status_code == 200:#line:492
+            usernames .put (O00OO00OO0O000O00 )#line:493
+        elif O0O000O0O000O00OO.status_code in [400, 403]:#line:494
+            rl +=1 #line:495
+        else:#line:498
+            cr +=1 #line:499
+            stat = str(O0O000O0O000O00OO .status_code)
+            crs =stat #line:500
 def changebio ():#line:503
     os .system ("title "+"Zeus 1.03 ~ Changing Bio")#line:504
     OO0OOO0O0000000OO ='https://api22-normal-c-useast1a.tiktokv.com/aweme/v1/commit/user/?iid=7037547498412918534&device_id=6568572585649489418&ac=wifi&channel=googleplay&aid=1233&app_name=musical_ly&version_code=220105&version_name=22.1.5&device_platform=android&ab_version=22.1.5&ssmix=a&device_type=G011A&device_brand=google&language=en&os_api=25&os_version=7.1.2&openudid=72b9ece3ef7e8c14&manifest_version_code=2022201050&resolution=1024*576&dpi=191&update_version_code=2022201050&_rticket=1638644547171&current_region=US&app_type=normal&sys_region=US&mcc_mnc=311271&timezone_name=Asia%2FShanghai&residence=US&ts=1638644545&timezone_offset=28800&build_number=22.1.5&region=US&uoo=0&app_language=en&carrier_region=US&locale=en&op_region=US&ac2=wifi&cdid=0456edd8-8b5c-47ac-a8df-4ac429b8455e'#line:505
@@ -321,19 +319,11 @@ if huk =='':#line:631
     disco =DiscordWebhook (url ='https://discord.com/api/webhooks/918925471595524137/6FblH_9Q2wzKI0UsOqErVMH1xewYZeeh3eNMJ_murD1Ar5XMFKZj3-cyNd0qC9_QKCLb')#line:637
 else :#line:639
     disc =DiscordWebhook (url =huk )#line:640
-if bio =='':#line:641
-    bio ='DM Aim low!#9999 on discord to buy'#line:642
-else :#line:643
-    bio =bio #line:644
-if nick =='':#line:645
-    nick ='AIMS AUTOCLAIMER'#line:646
-else :#line:647
-    nick =nick #line:648
+bio = 'DM Aim low!#9999 on discord to buy' if bio =='' else bio
+nick = 'AIMS AUTOCLAIMER' if nick =='' else nick
 ted =str (threads )#line:649
 clear ()#line:651
-if p_file =='':#line:652
-    pass #line:653
-else :#line:654
+if p_file != '':
     print (f'''{Fore.RED}
       [WARNING]
     You need very good paid proxies in {p_file}
@@ -346,9 +336,7 @@ url ='https://api22-normal-c-useast1a.tiktokv.com/passport/login_name/update/?ii
 for line in open (user_file ,'r'):#line:665
     usernames .put (line .strip ())#line:666
 usersize =usernames .qsize ()#line:668
-if p_file =='':#line:670
-    pass #line:671
-else :#line:672
+if p_file != '':
     for line in open (p_file ,'r'):#line:673
         p_pr .put (line .strip ())#line:674
 proxsize =p_pr .qsize ()#line:675
@@ -402,13 +390,13 @@ print (f'''
          ''')#line:727
 time .sleep (4 )#line:728
 clear ()#line:729
-if m =='':#line:731
+if not m:#line:731
     print (f"[{Fore.RED}>{Fore.RESET}] No valid ssids to continue with")#line:732
     quit (1 )#line:733
 changenick ()#line:734
 threading .Thread (target =printt ).start ()#line:735
 thread =[]#line:737
-for i in range (threads ):#line:738
+for _ in range (threads ):
     t =threading .Thread (target =claim )#line:739
     t .daemon =True #line:740
     t .start ()#line:741
